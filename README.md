@@ -33,7 +33,7 @@ sudo apt-get -y upgrade
 # install dependencies from apt
 sudo apt install -y bluez-tools bluez-hcidump libbluetooth-dev \
                     git gcc python3-pip python3-setuptools \
-                    python3-pydbus
+                    python3-pydbus python3-dbus
 
 # install pybluez from source
 git clone https://github.com/pybluez/pybluez.git
