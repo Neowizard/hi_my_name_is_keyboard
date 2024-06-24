@@ -199,6 +199,8 @@ def ascii_to_hid(c):
     return (Key.Equal, Key.LeftShift, Mod.LeftShift)
   elif c in ['\r', '\n']:
     return (Key.Enter,)
+  elif c == '_':
+    return (Key.Minus, Mod.LeftShift)
   else:
     log.error("UNKNOWN '%s'" % c)
 
